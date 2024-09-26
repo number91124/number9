@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+
+    <title>e-tiga</title>
+    <base href="/number9/" />
+
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.ico" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/lib/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <h1 class="header__logo">
+        <img src="img/logo.png" alt="header-logo" width="320" height="64" />
+      </h1>
+      <div class="header__icon drawer-icon">
+        <span class="drawer-icon__bar"></span>
+        <span class="drawer-icon__bar"></span>
+        <span class="drawer-icon__bar"></span>
+      </div>
+      <nav class="drawer__lists">
+        <!-- /.nav__listを追加 -->
+        <div class="nav__list">
+          <!-- imgをdivタグで囲いulの外側で配置 -->
+          <div class="nav-logo">
+            <img src="img/logo-white.png" alt="nav-logo" width="360" height="72" />
+          </div>
+          <ul class="drawer__ul">
+            <li class="drawer__list">
+              <a href="#" class="drawer__link">e-tigaとは</a>
+            </li>
+            <li class="drawer__list">
+              <a href="#" class="drawer__link">ご利用の流れ</a>
+            </li>
+            <li class="drawer__list">
+              <a href="#" class="drawer__link">プラン</a>
+            </li>
+            <li class="drawer__list">
+              <a href="#" class="drawer__link">運営会社</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- <div>と<a>タグで囲み別々のclass名をつけました -->
+      <div class="drawer__lists-btn-unique">
+        <a href="#" class="button">無料で登録</a>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <div class="main__inner inner">
+        <!-- pictureタグをdivタグで囲む -->
+        <div class="fv">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/first-view.png" />
+            <img class="fv__img" src="img/sp/first-view.png" alt="main-visual" width="796" height="570" />
+          </picture>
+        </div>
+        <div class="main__contents">
+          <!-- /.main__contents -->
+          <div class="main__logo">
+            <img src="img/logo.png" alt="main-logo" width="320" height="64" />
+          </div>
+          <h2 class="main__title">会社の「チーム力」を強化する</h2>
+          <p class="main__text">誰でも簡単らくらくに、 <br />スケジュールや名刺をデジタル化。<br />チームの管理をよりスピーディーに円滑にします。</p>
+          <div class="main__btn-unique">
+            <a href="#" class="button">無料で登録</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- news -->
+    <section class="news">
+      <div class="news__inner inner">
+        <h2 class="news__title heading">NEWS</h2>
+        <ul class="news__list">
+          <li class="news__contents">
+            <time datetime="2022-12-15" class="news__content-time">2022年12月15日</time>
+            <p class="news__content-text">年末年始について</p>
+          </li>
+          <li class="news__contents">
+            <time datetime="2022-12-10" class="news__content-time">2022年12月10日</time>
+            <p class="news__content-text">チームマーケティングプランでフル活用。マーケティング部長に聞いたe-toraの活用方法とは。チームマーケティングプランでフル活用。マーケティング部長に聞いたe-toraの活用方法とは。</p>
+          </li>
+          <li class="news__contents">
+            <time datetime="2022-09-01" class="news__content-time">2022年9月1日</time>
+            <p class="news__content-text">商談効率アップ！セミナーを開催します。</p>
+          </li>
+          <li class="news__contents">
+            <time datetime="2022-12-15" class="news__content-time">2022年8月1日</time>
+            <p class="news__content-text">営業時間の変更について</p>
+          </li>
+          <li class="news__contents">
+            <time datetime="2022-12-15" class="news__content-time">2022年6月1日</time>
+            <p class="news__content-text">e-tiga出張無料体験会を実施致します。</p>
+          </li>
+        </ul>
+        <div class="news__pagination">
+          <div class="pagination">
+            <ul class="pagination__container">
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">&lt;&lt;</a>
+              </li>
+              <li class="pagination__item pagination__item--current">1</li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">2</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">3</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">4</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link">5</a>
+              </li>
+              <li class="pagination__item pagination__item--next">
+                <a href="#" class="pagination__link">&gt;&gt;</a>
+              </li>
+            </ul>
+          </div>
+          <div class="news__pagination-btn">
+            <a class="see-all__btn" href="">全てみる</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- concept -->
+    <section class="concept">
+      <div class="concept__wrapper">
+        <picture class="concept__contents-img">
+          <source media="(min-width: 768px)" srcset="img/concept_img.png" />
+          <img src="img/concept_img.png" alt="concept-image" width="796" height="570" />
+        </picture>
+        <div class="concept__contents">
+          <div class="concept__contents-items">
+            <h2 class="concept__contents-title">名刺作成から、<br />スケジュール管理、<br />経理までを簡単スピーディーに。</h2>
+            <p class="concept__contents-text">誰でも簡単らくらくに、スケジュールや名刺をデジタル化。チームの管理をよりスピーディーに円滑にします。誰でも簡単らくらくに、スケジュールや名刺をデジタル化。チームの管理をよりスピーディーに円滑にします。誰でも簡単らくらくに、</p>
+          </div>
+          <div class="concept__btn-unique">
+            <a href="#" class="button">詳細・できることへ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /gallery -->
+    <section class="gallery">
+      <div class="gallery__inner inner">
+        <div class="gallery__title">
+          <h2 class="title-1">CASESTUDY</h2>
+          <span class="title-2">お客様の声</span>
+        </div>
+        <div class="gallery__slider">
+          <!-- Slider main container -->
+          <div class="swiper gallery__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide gallery__slide">
+                <div class="gallery-card">
+                  <div class="gallery-card__image">
+                    <img src="img/card-1-img.jpg" alt="blog-image" width="640" height="428" />
+                  </div>
+                  <h3 class="gallery-card__title">在宅でも団結したチームワークに。</h3>
+                  <p class="gallery-card__text-main">〇〇株式会社 吉本様</p>
+                  <p class="gallery-card__text-sub">情報通信業</p>
+                </div>
+              </div>
+              <div class="swiper-slide gallery__slide">
+                <div class="swiper-slide">
+                  <div class="gallery-card">
+                    <div class="gallery-card__image">
+                      <img src="img/card-2-img.jpg" alt="blog-image" width="640" height="428" />
+                    </div>
+                    <h3 class="gallery-card__title">1日2時間分の処理時間の削減に成功</h3>
+                    <p class="gallery-card__text-main">〇〇株式会社 竹内様</p>
+                    <p class="gallery-card__text-sub">情報通信業</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide gallery__slide">
+                <div class="swiper-slide">
+                  <div class="gallery-card">
+                    <div class="gallery-card__image">
+                      <img src="img/card-3-img.jpg" alt="blog-image" width="640" height="428" />
+                    </div>
+                    <h3 class="gallery-card__title">導入から1年で残業0へ。</h3>
+                    <p class="gallery-card__text-main">〇〇株式会社 三島様</p>
+                    <p class="gallery-card__text-sub">情報通信業</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination gallery__pagination"></div>
+            <!-- If we need navigation buttons -->
+          </div>
+          <div class="swiper-button-prev gallery__prev"></div>
+          <div class="swiper-button-next gallery__next"></div>
+        </div>
+        <div class="btn--padding">
+          <a href="" class="see-all__btn">全てみる</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- price -->
+    <section class="price">
+      <div class="price__inner inner">
+        <div class="price__title">
+          <h2 class="title-1">PRICE</h2>
+          <span class="title-2">料金</span>
+        </div>
+        <ul class="price__contents-list">
+          <li class="price__contents">
+            <div class="price__card">
+              <div class="price__card-content">
+                <h3 class="price__card__title">ライトプラン</h3>
+                <p class="price__card__text">無料</p>
+              </div>
+              <div class="price__table">
+                <table id="priceTable" aria-label="Price Table">
+                  <tr>
+                    <td class="td_right">人数</td>
+                    <td class="td_left">3人</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">電話サポート</td>
+                    <td class="td_left">なし</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">名刺作成</td>
+                    <td class="td_left">月2枚まで</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">サポート1</td>
+                    <td class="td_left">なし</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">サポート2</td>
+                    <td class="td_left">なし</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">サポート3</td>
+                    <td class="td_left">なし</td>
+                  </tr>
+                </table>
+                <div class="price__card__btn-unique">
+                  <a href="#" class="button">お申し込み</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 2枚目 -->
+          <li class="price__contents">
+            <div class="price__card">
+              <div class="price__card-content">
+                <h3 class="price__card__title">スタンダードプラン</h3>
+                <p class="price__card__text"><span>月</span>980<span>円</span></p>
+              </div>
+              <div class="price__table">
+                <table aria-label="Price Table">
+                  <tr>
+                    <td class="td_right">人数</td>
+                    <td class="td_left">20人</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">電話サポート</td>
+                    <td class="td_left">なし</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">名刺作成</td>
+                    <td class="td_left">月15枚まで</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">サポート1</td>
+                    <td class="td_left">あり</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">サポート2</td>
+                    <td class="td_left">なし</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">サポート3</td>
+                    <td class="td_left">なし</td>
+                  </tr>
+                </table>
+                <div class="price__card__btn-unique">
+                  <a href="#" class="button">お申し込み</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- 3枚目 -->
+          <li class="price__contents">
+            <div class="price__card">
+              <div class="price__card-content">
+                <h3 class="price__card__title">プロプラン</h3>
+                <p class="price__card__text"><span>月</span>2,480<span>円</span></p>
+              </div>
+              <div class="price__table">
+                <table aria-label="Price Table">
+                  <tr>
+                    <td class="td_right">人数</td>
+                    <td class="td_left">無制限</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">電話サポート</td>
+                    <td class="td_left">無制限</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">名刺作成</td>
+                    <td class="td_left">無制限</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">サポート1</td>
+                    <td class="td_left">あり</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">サポート2</td>
+                    <td class="td_left">あり</td>
+                  </tr>
+                  <tr>
+                    <td class="td_right">サポート3</td>
+                    <td class="td_left">あり</td>
+                  </tr>
+                </table>
+                <div class="price__card__btn-unique">
+                  <a href="#" class="button">お申し込み</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Company -->
+    <section class="company">
+      <div class="company__inner inner">
+        <div class="company__title">
+          <h2 class="title-1">COMPANY</h2>
+          <span class="title-2">会社概要</span>
+        </div>
+        <div class="company__contents-wrapper">
+          <div class="company__tab">
+            <ul class="company__tab-menu">
+              <li id="tab-overview" class="company__tab-menu-item is-active">会社概要</li>
+              <li id="tab-history" class="company__tab-menu-item">沿革</li>
+              <li id="tab-certifications" class="company__tab-menu-item">認証</li>
+            </ul>
+          </div>
+          <div id="content-overview" class="company__contents">
+            <div class="corporate-summary">
+              <h3 class="content-overview__title">会社概要</h3>
+              <p class="content-overview__text">ここに会社概要が入ります。</p>
+            </div>
+            <div class="company__contents-items">
+              <dl class="company__contents-item">
+                <dt class="company__contents-title">会社名</dt>
+                <dd class="company__contents-text">株式会社e-tiga</dd>
+              </dl>
+              <dl class="company__contents-item item02">
+                <dt class="company__contents-title">資本金</dt>
+                <dd class="company__contents-text">1000万円</dd>
+              </dl>
+              <dl class="company__contents-item item03">
+                <dt class="company__contents-title">本社所在地</dt>
+                <dd class="company__contents-text">東京都〇〇区〇〇<br class="hidden-pc" />　〇〇ビル4階</dd>
+              </dl>
+              <dl class="company__contents-item item04">
+                <dt class="company__contents-title">創業</dt>
+                <dd class="company__contents-text">2018年7月10日</dd>
+              </dl>
+              <dl class="company__contents-item item05">
+                <dt class="company__contents-title">代表社員</dt>
+                <dd class="company__contents-text">田中　太郎</dd>
+              </dl>
+            </div>
+          </div>
+          <!-- 沿革 -->
+          <div id="content-history" class="history__contents-wrapper">
+            <ul class="history__contents">
+              <li class="history__items">
+                <time datetime="2021-04" class="history__content-time">2021年4月</time>
+                <p class="history__content-text">株式会社e-tiga設立</p>
+              </li>
+              <li class="history__items">
+                <time datetime="2021-12" class="history__content-time">2021年12月</time>
+                <p class="history__content-text">e-tigaリリース</p>
+              </li>
+              <li class="history__items">
+                <time datetime="2022-03" class="history__content-time">2022年3月</time>
+                <p class="history__content-text">導入企業1,000社突破</p>
+              </li>
+              <li class="history__items">
+                <time datetime="2022-10" class="history__content-time">2022年10月</time>
+                <p class="history__content-text">導入企業2,000社を突破</p>
+              </li>
+              <li class="history__items">
+                <time datetime="2023-09" class="history__content-time">2023年9月</time>
+                <p class="history__content-text">事務所を渋谷に移転</p>
+              </li>
+            </ul>
+          </div>
+          <!-- 認証 -->
+          <div id="content-certifications" class="certifications__contents-wrapper">
+            <p class="certified_content-title">〇〇◎1111認証取得</p>
+            <p class="certified_content-text">国際規格である〇〇 認証取得しております。セキュリティ管理システムを開発・運用しており、大切な情報をお守りします。国際規格である〇〇 認証取得しております。セキュリティ管理システムを開発・運用しており、大切な情報をお守りします。国際規格である〇〇 認証取得しております。セキュリティ管理システムを開発・運用しており、大切な情報をお守りします。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section class="cta">
+      <div class="cta__inner inner">
+        <div class="cta__contents">
+          <h2 class="cta__title">まずは無料お試し</h2>
+          <p class="cta__title-sub">ライトプランなら無料でお使いいただけます。</p>
+        </div>
+        <div class="cta__btn-unique">
+          <a href="#" class="price__card__btn-common button">お申し込み</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog -->
+    <section class="blog">
+      <div class="blog__inner inner">
+        <div class="blog__title">
+          <h2 class="title-1">BLOG</h2>
+          <span class="title-2">ブログ</span>
+        </div>
+        <ul class="blog__contents-list">
+          <li class="blog__card">
+            <div class="blog__card-img">
+              <img src="img/blog-01.jpg" alt="blog-image" width="660" height="440" />
+              <span class="blog-img-label">ラベル</span>
+            </div>
+            <div class="blog__card-content">
+              <h3 class="blog__card-title">タイトルタイトル</h3>
+              <p class="blog__card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="blog__card">
+            <div class="blog__card-img">
+              <img src="img/blog-02.jpg" alt="blog-image" width="660" height="440" />
+              <span class="blog-img-label">ラベル</span>
+            </div>
+            <div class="blog__card-content">
+              <h3 class="blog__card-title">タイトルタイトル</h3>
+              <p class="blog__card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="blog__card">
+            <div class="blog__card-img">
+              <img src="img/blog-03.jpg" alt="blog-image" width="660" height="440" />
+              <span class="blog-img-label">ラベル</span>
+            </div>
+            <div class="blog__card-content">
+              <h3 class="blog__card-title">タイトルタイトル</h3>
+              <p class="blog__card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="blog__card">
+            <div class="blog__card-img">
+              <img src="img/blog-04.jpg" alt="blog-image" width="660" height="440" />
+              <span class="blog-img-label">ラベル</span>
+            </div>
+            <div class="blog__card-content">
+              <h3 class="blog__card-title">タイトルタイトル</h3>
+              <p class="blog__card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="blog__card">
+            <div class="blog__card-img">
+              <img src="img/blog-05.jpg" alt="blog-image" width="660" height="440" />
+              <span class="blog-img-label">ラベル</span>
+            </div>
+            <div class="blog__card-content">
+              <h3 class="blog__card-title">タイトルタイトル</h3>
+              <p class="blog__card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+          <li class="blog__card">
+            <div class="blog__card-img">
+              <img src="img/blog-06.jpg" alt="blog-image" width="660" height="440" />
+              <span class="blog-img-label">ラベル</span>
+            </div>
+            <div class="blog__card-content">
+              <h3 class="blog__card-title">タイトルタイトル</h3>
+              <p class="blog__card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="blog__btn-unique">
+        <a href="#" class="button button--blog">ブログ一覧へ</a>
+      </div>
+    </section>
+
+    <!-- seminar -->
+    <section class="seminar">
+      <div class="seminar__inner inner">
+        <div class="seminar__title">
+          <h2 class="title-1">SEMINAR</h2>
+          <span class="title-2">セミナー</span>
+        </div>
+        <ul class="seminar__contents-list">
+          <li class="seminar__card">
+            <div class="seminar__card-img">
+              <img src="img/seminar.jpg" alt="seminar-image" width="648" height="480" />
+            </div>
+            <div class="seminar__contents">
+              <div class="seminar__day">
+                <span class="seminar-img-label">開催日</span>
+                <time datetime="2024-02-08">2024.02.08</time>
+              </div>
+              <div class="seminar__card-content">
+                <h3 class="seminar__card-title">マーケティングセミナーを開催します。</h3>
+                <p class="seminar__card-text">ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。</p>
+              </div>
+              <div class="seminar__btn">
+                <a href="" class="details__btn">詳細を見る</a>
+              </div>
+            </div>
+          </li>
+          <li class="seminar__card">
+            <div class="seminar__card-img">
+              <img src="img/seminar.jpg" alt="seminar-image" width="648" height="480" />
+            </div>
+            <div class="seminar__contents">
+              <div class="seminar__day">
+                <span class="seminar-img-label">開催日</span>
+                <time datetime="2024-02-08">2024.02.08</time>
+              </div>
+              <div class="seminar__card-content">
+                <h3 class="seminar__card-title">マーケティングセミナーを開催します。</h3>
+                <p class="seminar__card-text">ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。</p>
+              </div>
+              <div class="seminar__btn">
+                <a href="" class="details__btn">詳細を見る</a>
+              </div>
+            </div>
+          </li>
+          <li class="seminar__card">
+            <div class="seminar__card-img">
+              <img src="img/seminar.jpg" alt="seminar-image" width="648" height="480" />
+            </div>
+            <div class="seminar__contents">
+              <div class="seminar__day">
+                <span class="seminar-img-label">開催日</span>
+                <time datetime="2024-02-08">2024.02.08</time>
+              </div>
+              <div class="seminar__card-content">
+                <h3 class="seminar__card-title">マーケティングセミナーを開催します。</h3>
+                <p class="seminar__card-text">ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。ここに抜粋が入ります。</p>
+              </div>
+              <div class="seminar__btn">
+                <a href="" class="details__btn">詳細を見る</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="seminar__card__btn-unique">
+        <a href="#" class="button button--seminar">セミナー一覧へ</a>
+      </div>
+    </section>
+
+    <!-- Q&A -->
+    <section class="section__ques">
+      <div class="section__ques__inner inner">
+        <div class="ques__title heading">
+          <h2 class="title-1">Q&A</h2>
+        </div>
+        <div class="qa__wrapper">
+          <div class="qa__boxes">
+            <div class="qa__box qa-box is-open">
+              <dl class="qa-box__head-btn js-accordion">
+                <dt class="qa-box__head-icon">Q</dt>
+                <dd class="qa-box__head-text">ここにテキストが入ります。</dd>
+              </dl>
+              <dl class="qa-box__body" style="display: block">
+                <dt class="qa-box__a"></dt>
+                <dd class="qa-box__a-text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="qa__boxes">
+            <div class="qa__box qa-box">
+              <dl class="qa-box__head-btn js-accordion">
+                <dt class="qa-box__head-icon">Q</dt>
+                <dd class="qa-box__head-text">ここにテキストが入ります。</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="qa__boxes">
+            <div class="qa__box qa-box">
+              <dl class="qa-box__head-btn js-accordion">
+                <dt class="qa-box__head-icon">Q</dt>
+                <dd class="qa-box__head-text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</dd>
+              </dl>
+            </div>
+          </div>
+          <div class="qa__boxes">
+            <div class="qa__box qa-box">
+              <dl class="qa-box__head-btn js-accordion">
+                <dt class="qa-box__head-icon">Q</dt>
+                <dd class="qa-box__head-text">ここにテキストが入ります。</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__inner inner">
+        <div class="footer__wrapper">
+          <div class="footer__contents">
+            <div class="footer__logo">
+              <img src="img/logo-white.png" alt="footer-logo" width="360" height="72" />
+            </div>
+            <address class="footer__contact">
+              <p class="footer-address">住所：東京都〇〇区〇〇　〇〇ビル4階</p>
+              <p class="footer-phone">
+                <a href="tel:0000-00-0000">TEL:0000-00-0000</a>
+              </p>
+              <p class="footer-fax">FAX:0000-00-0000</p>
+            </address>
+          </div>
+          <ul class="footer__links-items">
+            <li class="footer-contact">
+              <a href="/"
+                >お問い合わせ
+                <span class="footer__links-line-1"></span>
+              </a>
+            </li>
+            <li class="footer-privacy-policy">
+              <a href="/"
+                >プライバシーポリシー
+                <span class="footer__links-line-2"></span>
+              </a>
+            </li>
+            <li class="footer-terms">
+              <a href="/">特定商取引法</a>
+            </li>
+          </ul>
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a href="https://x.com/home?lang=ja" target="_blank" rel="noopener">
+                <img src="img/twitter.svg" alt="Twitter" width="30" height="30" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://www.facebook.com/?locale=ja_JP" target="_blank" rel="noopener">
+                <img src="img/facebook.svg" alt="Facebook" width="30" height="30" />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                <img src="img/instagram.svg" alt="Instagram" width="30" height="30" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <small>Copyright &copy;2023 デイトラ All rights reserved.</small>
+      </div>
+    </footer>
+    <!-- script -->
+    <script src="./js/lib/swiper-bundle.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>
